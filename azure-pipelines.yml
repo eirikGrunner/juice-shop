@@ -35,7 +35,7 @@ stages:
         AnalysisService: 'veracode'
         veracodeAppProfile: 'Juice Shop'
         version: '$(build.buildNumber)'
-        filepath: '$(build.artifactstagingdirectory)'
+        filepath: '$(imageRepository)'
         importResults: true
         failBuildOnPolicyFail: true
         maximumWaitTime: '360'
