@@ -35,7 +35,7 @@ stages:
         AnalysisService: 'veracode'
         veracodeAppProfile: '$(system.teamProject)'
         version: '$(build.buildNumber)'
-        filepath: '$(build.artifactstagingdirectory)'
+        filepath: '$(System.ArtifactsDirectory)'
         importResults: true
         failBuildOnPolicyFail: true
         maximumWaitTime: '360'
